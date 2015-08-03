@@ -1,0 +1,78 @@
+#linksupplierpage {
+    position: fixed;
+    top: 15%;
+    right: -295px;
+    z-index: 8000;
+    width: 25%;
+    padding: 10px;
+    background-color: #FFF;
+
+    -moz-box-shadow: -10px 5px 8px 0px #656565;
+    -webkit-box-shadow: -10px 5px 8px 0px #656565;
+    -o-box-shadow: -10px 5px 8px 0px #656565;
+    box-shadow: -10px 5px 8px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=206, Strength=8);
+}
+
+.slide_open {
+    -webkit-animation: slide_open 1s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide_open 1s forwards;
+    animation-delay: 0s;
+}
+
+.slide_close {
+    -webkit-animation: slide_close 1s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide_close 1s forwards;
+    animation-delay: 0s;
+}
+
+#linksupplierpage img {
+    display: inline;
+    width: 30%;
+}
+
+#linksupplierpage .supplier-body {
+    width: 70%;
+    display: inline;
+    padding: 5px 14px;
+    float: right;
+}
+
+#linksupplierpage .supplier-body h4 {
+    color: #000;
+}
+
+#linksupplierpage .supplier-body .btn {
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 14px;
+    background-color: #9F0E28;
+    border-color: #7A0B1F;
+}
+
+#linksupplierpage .fancybox-close {
+    display: none;
+    top: -17px;
+    right: 317px;
+}
+    
+@-webkit-keyframes slide_open {
+    100% { right: 0; }
+}
+
+@keyframes slide_open {
+    100% { right: 0; }
+}
+
+@-webkit-keyframes slide_close {
+    0% { right: 0; }
+    100% { right: -295px; }
+}
+
+@keyframes slide_close {
+    0% { right: 0; }
+    100% { right: -295px; }
+}
+
